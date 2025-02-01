@@ -18,3 +18,22 @@ mkdir php-react-backend
 cd php-react-backend
 
 ```
+
+### Create an API using PHP (inside php-react-backend folder):
+
+Create a file index.php
+
+```
+<?php
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: *");
+header("Content-Type: application/json");
+
+$data = [
+    "message" => "Hello from PHP Backend"
+];
+
+echo json_encode($data);
+?>
+
+```
