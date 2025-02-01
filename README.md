@@ -2,6 +2,8 @@
 
 Setting up PHP with React on your local machine involves configuring a backend (PHP) and frontend (React) to work together. 
 
+<img src="https://miro.medium.com/v2/resize:fit:686/1*E78GTfJ-GboVhLqeUAjiNQ.jpeg" width="100%"/>
+
 ## Step 1: Install Required Software
 Ensure you have the following installed:
 
