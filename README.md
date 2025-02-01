@@ -1,4 +1,4 @@
-# php-with-react
+# PHP With React
 
 Setting up PHP with React on your local machine involves configuring a backend (PHP) and frontend (React) to work together. 
 
