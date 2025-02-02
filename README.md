@@ -39,3 +39,56 @@ echo json_encode($data);
 ?>
 
 ```
+
+### Start XAMPP Server:
+
+Open XAMPP Control Panel → Start Apache
+
+- Visit: http://localhost/php-react-backend/index.php
+
+```
+{"message":"Hello from PHP Backend"}
+```
+
+## Step 3: Setup React Frontend
+
+###  Create a React project in another directory:    
+
+```
+cd C:\Users\YourUserName
+npx create-react-app php-react-frontend
+cd php-react-frontend
+```
+
+### Modify App.js to fetch data from PHP:
+
+```
+import { useState, useEffect } from "react";
+
+function App() {
+    const [message, setMessage] = useState("");
+
+    useEffect(() => {
+        fetch("http://localhost/php-react-backend/index.php")
+            .then(response => response.json())
+            .then(data => setMessage(data.message))
+            .catch(error => console.error("Error:", error));
+    }, []);
+
+    return (
+        <div>
+            <h1>React with PHP Backend</h1>
+            <p>Message from backend: {message}</p>
+        </div>
+    );
+}
+
+export default App;
+```
+
+
+
+
+
+
+
